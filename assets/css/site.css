@@ -9,3 +9,8 @@
 .section {
     padding: 0 0 70px 0;
 }
+
+.social-icons a {
+    padding: 0 !important;
+    margin: 0 !important;
+}
