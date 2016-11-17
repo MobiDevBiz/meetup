@@ -1,27 +1,27 @@
 1:
   speaker: i.kuzminov
   title: 'Ruby Web Dev: The Other Way'
-  description: 'Let us talk about double-edged sword of Ruby on Rails apps development and how it could be improved!'
+  description: 'Розглянемо "гострі леза" у підході до розробки Ruby on Rails застосунків, та як можно покращити цей процес і результат!'
   lang: ua
   slides:
   video:
 2:
   speaker: s.koba
-  title: Say Hi to Docker for RoR
+  title: Docker для начинающих рубистов
   description: 'A basic cookbook for creating your RoR application infrastructure using Docker with ease. You will learn what are the benefits of Docker based local development and production deployment, and how to create your first real life RoR application with help of Docker.'
   lang: ru
   slides:
   video: 
 3:
   speaker: v.volontsevich
-  title: Trailblazer overview
+  title: Обзор Trailblazer
   description: 'Основные элементы и их практическое использование. Концепт-ориентированный стиль архитектуры против стандартного Rails подхода.'
   lang: ru
   slides:
   video: 
 4:
   speaker: l.derevianko
-  title: Trailblazer operations
+  title: Операции в Trailblazer
   description: 'Зачем нам нужны операции, преимущества использования операций в приложении. Спрячь свою бизнес-логику подальше от моделей и контроллеров!'
   lang: ru
   slides:
