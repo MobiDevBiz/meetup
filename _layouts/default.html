@@ -2,8 +2,8 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 <head>
 	<meta charset="utf-8" />
-	<link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
-	<link rel="icon" type="image/png" href="../assets/img/favicon.png">
+	<link rel="apple-touch-icon" sizes="76x76" href=" {{ "/assets/img/apple-icon.png" | relative_url }} ">
+	<link rel="icon" type="image/png" href="{{ "/assets/img/favicon.png" | relative_url }} ">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
@@ -33,7 +33,7 @@
 		            <span class="icon-bar"></span>
 		            <span class="icon-bar"></span>
         		</button>
-        		<a class="navbar-brand" href="">{{ site.title }}</a>
+        		<a class="navbar-brand" href="#">{{ site.title }} | {{ site.description}}</a>
         	</div>
 
         	<div class="collapse navbar-collapse" id="navigation-example">
@@ -48,13 +48,18 @@
     						<!--Спікери-->
     					<!--</a>-->
     				<!--</li>-->
+                    <li>
+                        <a href="http://mobidev.com.ua/" target="_blank" class="btn btn-simple btn-white btn-just-icon">
+                            <img src="{{ "/assets/img/mobidevcomua-logo.png" | relative_url }}" alt="">
+                        </a>
+                    </li>
 		            <li>
-		                <a href="https://twitter.com/MobiDev_" target="_blank" class="btn btn-simple btn-white btn-just-icon">
-							<i class="fa fa-twitter"></i>
+		                <a href="https://vk.com/mobidev_corp" target="_blank" class="btn btn-simple btn-white btn-just-icon">
+							<i class="fa fa-vk"></i>
 						</a>
 		            </li>
 		            <li>
-		                <a href="https://www.facebook.com/MobiDev.Corporation/" target="_blank" class="btn btn-simple btn-white btn-just-icon">
+		                <a href="https://www.facebook.com/MobiDev.Team" target="_blank" class="btn btn-simple btn-white btn-just-icon">
 							<i class="fa fa-facebook-square"></i>
 						</a>
 		            </li>
@@ -70,12 +75,12 @@
             <div class="container">
                 <div class="row">
 					<div class="col-md-6">
-						<h1 class="title">{{ event.date }} {{ event.time }}</h1>
-						<h1 class="title">{{ event.title }}</h1>
-						<h1 class="scope-tag">#{{ event.label }}</h1>
-						<h4>{{ event.about }}</h4>
-	                    <br />
-	                    <a href="" class="btn btn-danger btn-raised btn-lg">
+                        <h1 class="title">{{ site.title }}</h1>
+                        <h1 class="scope-tag"><i class="fa fa-tag"></i> {{ event.label }}</h1>
+						<h1 class="title"><i class="fa fa-calendar-check-o"></i> {{ event.date }}</h1>
+						<h1 class="title"><i class="fa fa-clock-o"></i> {{ event.time }}</h1>
+
+	                    <a href="{{ event.reg_link }}" class="btn btn-danger btn-raised btn-lg" target="_blank">
 							<i class="fa fa-user-plus"></i> Реєструйся безкоштовно!
 						</a>
 					</div>
@@ -87,9 +92,7 @@
 			<div class="container">
 
 	        	<div class="section text-center">
-	                <h2 class="title">Будемо слухати</h2>
-
-
+	                <h2 class="title">Кого слухаємо?</h2>
 
 
 					<div class="team">
@@ -120,35 +123,27 @@
 	            </div>
 
 
-	            <div class="section text-center section-landing">
+	            <div class="section section-landing">
 	                <div class="row">
 	                    <div class="col-md-8 col-md-offset-2">
 	                        <h2 class="title">Що таке MobiDev Meetup?</h2>
-	                        <h5 class="description">Дуже цікава подія! Скоро буде більше інформації!</h5>
+                            <h5>Для кого?</h5>
+	                        <div class="description">
+                                Кожен мітап зосереджений навколо певної теми. Кожна доповідь базується на практичному досвіді та рішенні проблеми. Якщо Ви маєте досвід та інтерес - запрошуємо до участі.
+                            </div>
+                            <h5>Чому? </h5>
+                            <div class="description">
+                                У своїй повсякденній роботі ми використовуємо новітні технології, зустрічаємо нестандартні задачі та знаходимо для них ефективні рішення. Це, звісно, цікаво, однак інколи корисно відволіктися від буденності розробки. Професійні тематичні мітапи - це найкращий спосіб поділитися своїм досвідом, обговорити ідеї та відкрити нові можливості в колі професіоналів.
+                            </div>
+                            <h5>Українською?</h5>
+                            <div class="description">
+                                Так, цього разу спробували розширити горизонт та здобути практику використання професійної термінології українською. Можливо, наступний буде англійською?
+                            </div>
 	                    </div>
 	                </div>
 
 	            </div>
 
-
-	        	<div class="section landing-section text-center">
-	                <div class="row">
-
-	                        <h2 class="text-center title">Як нас знайти?</h2>
-							<h4 class="text-center description">Харків</h4>
-
-                        <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false&key={{ site.google_maps_key }}"></script>
-                        <div style="overflow:hidden;height:500px;width:100%">
-                            <div id="gmap_canvas" style="height:500px;width:100%">
-                                <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
-                            </div>
-                            <script type="text/javascript"> function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(50.01264726824783,36.227098555957014),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(50.01264726824783, 36.227098555957014)});infowindow = new google.maps.InfoWindow({content:"<b>Місце проведення ще уточнюється!</b><br/><br/> " });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
-
-                    </div>
-
-                    </div>
-
-	            </div>
 	        </div>
 
 		</div>
@@ -156,10 +151,10 @@
 	    <footer class="footer">
 	        <div class="container copyright">
 	            <nav class="pull-left">
-                    &copy; {{ site.time | date: '%Y' }} | Made with <i class="fa fa-heart heart"></i> in <a href="http://mobidev.biz/">MobiDev</a>
+                    &copy; {{ site.time | date: '%Y' }} | Зроблено з <i class="fa fa-heart heart"></i> в <a href="http://mobidev.com.ua/" target="_blank">MobiDev</a>
 	            </nav>
 	            <div class="pull-right text-muted">
-					Theme by <a href="http://www.creative-tim.com/">Creative Tim</a>
+					Шаблон від <a href="http://www.creative-tim.com/" target="_blank" rel="nofollow">Creative Tim</a>
 	            </div>
 	        </div>
 	    </footer>
