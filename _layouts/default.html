@@ -1,25 +1,26 @@
 <!doctype html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: " en" }}">
 <head>
-	<meta charset="utf-8" />
-	<link rel="apple-touch-icon" sizes="76x76" href=" {{ "/assets/img/apple-icon.png" | relative_url }} ">
-	<link rel="icon" type="image/png" href="{{ "/assets/img/favicon.png" | relative_url }} ">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8"/>
+    <link rel="apple-touch-icon" sizes="76x76" href=" {{ '/assets/img/apple-icon.png' | relative_url }} ">
+    <link rel="icon" type="image/png" href="{{ '/assets/img/favicon.png' | relative_url }} ">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+    <meta name="description"
+          content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
-	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
 
-	<!--     Fonts and icons     -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"/>
 
-	<!-- CSS Files -->
-    <link href="{{ "/assets/css/bootstrap.min.css" | relative_url }}" rel="stylesheet" />
-    <link href="{{ "/assets/css/material-kit.css" | relative_url }}" rel="stylesheet"/>
-    <link href="{{ "/assets/css/site.css" | relative_url }}" rel="stylesheet"/>
+    <!-- CSS Files -->
+    <link href="{{ '/assets/css/bootstrap.min.css' | relative_url }}" rel="stylesheet"/>
+    <link href="{{ '/assets/css/material-kit.css' | relative_url }}" rel="stylesheet"/>
+    <link href="{{ '/assets/css/site.css' | relative_url }}" rel="stylesheet"/>
 
     {% include google-analytics.html %}
     {% include yandex-metrika.html %}
@@ -27,170 +28,180 @@
 </head>
 
 <body class="landing-page">
-    <nav class="navbar navbar-transparent navbar-absolute">
-    	<div class="container">
-        	<!-- Brand and toggle get grouped for better mobile display -->
-        	<div class="navbar-header">
-        		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example">
-            		<span class="sr-only">Toggle navigation</span>
-		            <span class="icon-bar"></span>
-		            <span class="icon-bar"></span>
-		            <span class="icon-bar"></span>
-        		</button>
-        		<a class="navbar-brand" href="#">{{ site.title }} | {{ site.description}}</a>
-        	</div>
+<nav class="navbar navbar-transparent navbar-absolute">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">{{ site.title }} | {{ site.description}}</a>
+        </div>
 
-        	<div class="collapse navbar-collapse" id="navigation-example">
-        		<ul class="nav navbar-nav navbar-right">
-    				<!--<li>-->
-    					<!--<a href="#" target="_blank">-->
-    						<!--Події-->
-    					<!--</a>-->
-    				<!--</li>-->
-    				    				<!--<li>-->
-    					<!--<a href="#" target="_blank">-->
-    						<!--Спікери-->
-    					<!--</a>-->
-    				<!--</li>-->
-                    <li>
-                        <a href="http://mobidev.com.ua/" target="_blank" class="btn btn-simple btn-white btn-just-icon">
-                            <img src="{{ "/assets/img/mobidevcomua-logo.png" | relative_url }}" alt="">
-                        </a>
-                    </li>
-		            <li>
-		                <a href="https://vk.com/mobidev_corp" target="_blank" class="btn btn-simple btn-white btn-just-icon">
-							<i class="fa fa-vk"></i>
-						</a>
-		            </li>
-		            <li>
-		                <a href="https://www.facebook.com/MobiDev.Team" target="_blank" class="btn btn-simple btn-white btn-just-icon">
-							<i class="fa fa-facebook-square"></i>
-						</a>
-		            </li>
-        		</ul>
-        	</div>
-    	</div>
-    </nav>
+        <div class="collapse navbar-collapse" id="navigation-example">
+            <ul class="nav navbar-nav navbar-right">
+                <!--<li>-->
+                <!--<a href="#" target="_blank">-->
+                <!--Події-->
+                <!--</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<a href="#" target="_blank">-->
+                <!--Спікери-->
+                <!--</a>-->
+                <!--</li>-->
+                <li>
+                    <a href="http://mobidev.com.ua/" target="_blank" class="btn btn-simple btn-white btn-just-icon">
+                        <img src="{{ '/assets/img/mobidevcomua-logo.png' | relative_url }}" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://vk.com/mobidev_corp" target="_blank"
+                       class="btn btn-simple btn-white btn-just-icon">
+                        <i class="fa fa-vk"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/MobiDev.Team" target="_blank"
+                       class="btn btn-simple btn-white btn-just-icon">
+                        <i class="fa fa-facebook-square"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
 {% assign event = site.data.events[1] %}
 
-    <div class="wrapper">
-        <div class="header header-filter" style="background-image: url({{ "/assets/img/promo.jpg" | relative_url }});">
-            <div class="container">
-                <div class="row">
-					<div class="col-md-6">
-                        <h1 class="title">{{ site.title }}</h1>
-                        <h1 class="scope-tag"><i class="fa fa-tag"></i> {{ event.label }}</h1>
-						<h1 class="title"><i class="fa fa-calendar-check-o"></i> {{ event.date }}, Харків</h1>
-						<h1 class="title"><i class="fa fa-clock-o"></i> {{ event.time }}</h1>
+<div class="wrapper">
+    <div class="header header-filter" style="background-image: url({{ '/assets/img/promo.jpg' | relative_url }});">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="title">{{ site.title }}</h1>
+                    <h1 class="scope-tag"><i class="fa fa-tag"></i> {{ event.label }}</h1>
+                    <h1 class="title"><i class="fa fa-calendar-check-o"></i> {{ event.date }}, Харків</h1>
+                    <h1 class="title"><i class="fa fa-clock-o"></i> {{ event.time }}</h1>
 
-	                    <a href="{{ event.reg_link }}" class="btn btn-success btn-raised btn-lg reg-button" target="_blank">
-							<i class="fa fa-user-plus"></i> Реєструйся безкоштовно!
-						</a>
-					</div>
+                    <a href="{{ event.reg_link }}" class="btn btn-success btn-raised btn-lg reg-button" target="_blank">
+                        <i class="fa fa-user-plus"></i> Реєструйся безкоштовно!
+                    </a>
                 </div>
             </div>
         </div>
+    </div>
 
-		<div class="main main-raised">
-			<div class="container">
+    <div class="main main-raised">
+        <div class="container">
 
-	        	<div class="section text-center">
-	                <h2 class="title">Кого слухаємо?</h2>
+            <div class="section text-center">
+                <h2 class="title">Кого слухаємо?</h2>
 
 
-					<div class="team">
-						<div class="row">
+                <div class="team">
+                    <div class="row">
 
-{% for talk_id in event.talks %}
-{% assign talk = site.data.talks[talk_id] %}
-{% assign speaker = site.data.speakers[talk.speaker] %}
-							<div class="col-md-6">
-			                    <div class="team-player">
-			                        <img src="{% if speaker.photo %}{{ speaker.photo }}{% else %}{{ "/assets/img/default-avatar.png" | relative_url }}{% endif %}" alt="speakers photo" class="img-raised img-circle">
-			                        <h5 class="title">{{ speaker.name }}<br />
-										<small class="text-muted">{{ speaker.job_title }}</small>
-									</h5>
+                        {% for talk_id in event.talks %}
+                        {% assign talk = site.data.talks[talk_id] %}
+                        {% assign speaker = site.data.speakers[talk.speaker] %}
+                        <div class="col-md-6">
+                            <div class="team-player">
+                                <img src="{% if speaker.photo %}{{ speaker.photo }}{% else %}{{ '/assets/img/default-avatar.png' | relative_url }}{% endif %}"
+                                     alt="speakers photo" class="img-raised img-circle">
+                                <h5 class="title">{{ speaker.name }}<br/>
+                                    <small class="text-muted">{{ speaker.job_title }}</small>
+                                </h5>
                                 <div class="social-icons">
                                     {% include social-icons.html speaker=speaker %}
                                 </div>
-									<h3 class="title">{{ talk.title }}</h3>
-			                        <p class="description">{{ talk.description }}</p>
-			                        <p class="description">Мова виступу: {% include lang.html lang=talk.lang %}</p>
-			                    </div>
-			                </div>
-{% endfor %}
-
-						</div>
-					</div>
-
-	            </div>
-
-				<div class="section section-landing">
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2">
-							<h2 class="title">Місце проведення</h2>
-							<h5>Місто Харків</h5>
-							<div class="description">
-								За декілька днів до івенту ми надішлемо Вам листа із запрошенням та деталями щодо місця проведення івенту.
-							</div>
-						</div>
-					</div>
-
-				</div>
-
-	            <div class="section section-landing">
-	                <div class="row">
-	                    <div class="col-md-8 col-md-offset-2">
-	                        <h2 class="title">Що таке MobiDev Meetup?</h2>
-                            <h5>Для кого?</h5>
-	                        <div class="description">
-                                Кожен мітап зосереджений навколо певної теми. Кожна доповідь базується на практичному досвіді та рішенні проблеми. Якщо Ви маєте досвід та інтерес - запрошуємо до участі.
+                                <h3 class="title">{{ talk.title }}</h3>
+                                <p class="description">{{ talk.description }}</p>
+                                <p class="description">Мова виступу: {% include lang.html lang=talk.lang %}</p>
                             </div>
-                            <h5>Чому? </h5>
-                            <div class="description">
-								У своїй повсякденній роботі ми використовуємо новітні технології, працюємо із нестандартними задачами та знаходимо для них ефективні рішення. Це, звісно, цікаво, однак інколи корисно відволіктися від буденності розробки. Професійні тематичні мітапи - це найкращий спосіб поділитися своїм досвідом, обговорити ідеї та відкрити нові можливості в колі професіоналів.
-                            </div>
-                            <h5>Українською?</h5>
-                            <div class="description">
-                                Так, цього разу спробували розширити горизонт та отримати практику використання професійної термінології українською. Можливо, наступний буде англійською?
-                            </div>
-	                    </div>
-	                </div>
+                        </div>
+                        {% endfor %}
 
-	            </div>
+                    </div>
+                </div>
 
-	        </div>
+            </div>
 
-		</div>
+            <div class="section section-landing">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2 class="title">Місце проведення</h2>
+                        <h5>Місто Харків</h5>
+                        <div class="description">
+                            За декілька днів до івенту ми надішлемо Вам листа із запрошенням та деталями щодо місця
+                            проведення івенту.
+                        </div>
+                    </div>
+                </div>
 
-	    <footer class="footer">
-	        <div class="container copyright">
-	            <nav class="pull-left">
-                    &copy; {{ site.time | date: '%Y' }} | Зроблено з <i class="fa fa-heart heart"></i> в <a href="http://mobidev.com.ua/" target="_blank">MobiDev</a>
-	            </nav>
-	            <div class="pull-right text-muted">
-					Шаблон від <a href="http://www.creative-tim.com/" target="_blank" rel="nofollow">Creative Tim</a>
-	            </div>
-	        </div>
-	    </footer>
+            </div>
 
-	</div>
+            <div class="section section-landing">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2 class="title">Що таке MobiDev Meetup?</h2>
+                        <h5>Для кого?</h5>
+                        <div class="description">
+                            Кожен мітап зосереджений навколо певної теми. Кожна доповідь базується на практичному
+                            досвіді та рішенні проблеми. Якщо Ви маєте досвід та інтерес - запрошуємо до участі.
+                        </div>
+                        <h5>Чому? </h5>
+                        <div class="description">
+                            У своїй повсякденній роботі ми використовуємо новітні технології, працюємо із нестандартними
+                            задачами та знаходимо для них ефективні рішення. Це, звісно, цікаво, однак інколи корисно
+                            відволіктися від буденності розробки. Професійні тематичні мітапи - це найкращий спосіб
+                            поділитися своїм досвідом, обговорити ідеї та відкрити нові можливості в колі професіоналів.
+                        </div>
+                        <h5>Українською?</h5>
+                        <div class="description">
+                            Так, цього разу спробували розширити горизонт та отримати практику використання професійної
+                            термінології українською. Можливо, наступний буде англійською?
+                        </div>
+                    </div>
+                </div>
 
-	{% include addthis.html %}
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="container copyright">
+            <nav class="pull-left">
+                &copy; {{ site.time | date: '%Y' }} | Зроблено з <i class="fa fa-heart heart"></i> в <a
+                    href="http://mobidev.com.ua/" target="_blank">MobiDev</a>
+            </nav>
+            <div class="pull-right text-muted">
+                Шаблон від <a href="http://www.creative-tim.com/" target="_blank" rel="nofollow">Creative Tim</a>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+{% include addthis.html %}
 </body>
 
-	<!--   Core JS Files   -->
-	<script src="{{ "/assets/js/jquery.min.js" | relative_url }}" type="text/javascript"></script>
-	<script src="{{ "/assets/js/bootstrap.min.js" | relative_url }}" type="text/javascript"></script>
-	<script src="{{ "/assets/js/material.min.js" | relative_url }}"></script>
+<!--   Core JS Files   -->
+<script src="{{ '/assets/js/jquery.min.js' | relative_url }}" type="text/javascript"></script>
+<script src="{{ '/assets/js/bootstrap.min.js' | relative_url }}" type="text/javascript"></script>
+<script src="{{ '/assets/js/material.min.js' | relative_url }}"></script>
 
-	<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-	<script src="{{ "/assets/js/nouislider.min.js" | relative_url }}" type="text/javascript"></script>
+<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+<script src="{{ '/assets/js/nouislider.min.js' | relative_url }}" type="text/javascript"></script>
 
-	<!--  Plugin for the Datepicker, full documentation here: http://www.eyecon.ro/bootstrap-datepicker/ -->
-	<script src="{{ "/assets/js/bootstrap-datepicker.js" | relative_url }}" type="text/javascript"></script>
+<!--  Plugin for the Datepicker, full documentation here: http://www.eyecon.ro/bootstrap-datepicker/ -->
+<script src="{{ '/assets/js/bootstrap-datepicker.js' | relative_url }}" type="text/javascript"></script>
 
-	<!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
-	<script src="{{ "/assets/js/material-kit.js" | relative_url }}" type="text/javascript"></script>
+<!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
+<script src="{{ '/assets/js/material-kit.js' | relative_url }}" type="text/javascript"></script>
 </html>
