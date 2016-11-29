@@ -7,8 +7,8 @@
 }
 
 .team-player .description {
-     text-align: left;
- }
+    text-align: left;
+}
 
 .description {
     font-size: 16px;
@@ -27,6 +27,10 @@
     font-size: 22px !important;
 }
 
-.reg-button i.fa{
+.reg-button i.fa {
     position: static !important;
+}
+
+.gitter-chat-embed {
+    z-index: 1100;
 }
