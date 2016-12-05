@@ -1,0 +1,52 @@
+---
+#this ensures Jekyll reads the file to be transformed into CSS later
+#only Main files contain this front matter, not partials.
+---
+.team .team-player .title {
+  margin: 15px auto;
+}
+
+.team-player {
+  margin-bottom: 25px;
+}
+
+.team-player .description {
+  text-align: left;
+}
+
+.description {
+  font-size: 16px;
+}
+
+.section {
+  padding: 0 0 70px 0;
+}
+
+.social-icons a {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.reg-button {
+  font-size: 22px !important;
+}
+
+.reg-button i.fa {
+  position: static !important;
+}
+
+.gitter-chat-embed {
+  z-index: 1100;
+}
+
+.internal-page, .event-page {
+  .header {
+    height: 35vh !important;
+  }
+
+  @media (max-width: 991px) {
+    .header {
+      min-height: 20vh;
+    }
+  }
+}

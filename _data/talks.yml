@@ -3,26 +3,26 @@
   title: 'Ruby Web Dev: The Other Way'
   description: 'Розглянемо "гострі леза" у підході до розробки Ruby on Rails застосунків, та як можна покращити цей процес і результат!'
   lang: ua
-  slides:
-  video:
+  slides: <script async class="speakerdeck-embed" data-id="cbe1fd8fb735474190952bcad8472bc2" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+  video: <iframe width="100%" height="315" src="https://www.youtube.com/embed/1h9_cB9mPT8" frameborder="0" allowfullscreen></iframe>
 2:
   speaker: s.koba
   title: Docker для начинающих рубистов
   description: 'A basic cookbook for creating your RoR application infrastructure using Docker with ease. You will learn what are the benefits of Docker based local development and production deployment, and how to create your first real life RoR application with help of Docker.'
   lang: ru
-  slides:
-  video: 
+  slides: <iframe src="//slides.com/skoba/docker-for-ror/embed" width="100%" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  video: <iframe width="100%" height="315" src="https://www.youtube.com/embed/a0oQy7jgH_w" frameborder="0" allowfullscreen></iframe>
 3:
   speaker: v.volontsevich
   title: Обзор Trailblazer
   description: 'Основные элементы и их практическое использование. Концепт-ориентированный стиль архитектуры против стандартного Rails подхода.'
   lang: ru
-  slides:
-  video: 
+  slides: <iframe src="//slides.com/viktorvolontsevich/deck/embed" width="100%" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  video: <iframe width="100%" height="315" src="https://www.youtube.com/embed/9lv2lBq6x4A" frameborder="0" allowfullscreen></iframe>
 4:
   speaker: l.derevianko
   title: Операции в Trailblazer
   description: 'Зачем нам нужны операции, преимущества использования операций в приложении. Спрячь свою бизнес-логику подальше от моделей и контроллеров!'
   lang: ru
-  slides:
-  video:
+  slides: <iframe src="//slides.com/liubovderevianko/trailblazer_operations/embed" width="100%" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  video: <iframe width="100%" height="315" src="https://www.youtube.com/embed/hSwg4fIgthU" frameborder="0" allowfullscreen></iframe>

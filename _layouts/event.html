@@ -28,7 +28,7 @@
 
 </head>
 
-<body class="landing-page">
+<body class="landing-page event-page">
 <nav class="navbar navbar-transparent navbar-absolute">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -39,7 +39,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">{{ site.title }} | {{ site.description}}</a>
+            <a class="navbar-brand" href="/">{{ site.title }} | {{ site.description}}</a>
         </div>
 
         <div class="collapse navbar-collapse" id="navigation-example">
@@ -76,100 +76,74 @@
     </div>
 </nav>
 
-{% assign event = site.events | where:"uuid", 1 | first %}
-
 <div class="wrapper">
     <div class="header header-filter" style="background-image: url({{ '/assets/img/promo.jpg' | relative_url }});">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h1 class="title">{{ site.title }}</h1>
-                    <h1 class="scope-tag"><i class="fa fa-tag"></i> {{ event.category }}</h1>
-                    <h1 class="title"><i class="fa fa-calendar-check-o"></i> {{ event.date | date: "%d.%m.%Y" }}, Харків</h1>
-                    <h1 class="title"><i class="fa fa-clock-o"></i> {{ event.time }}</h1>
 
-                    <a href="{{ event.reg_link }}" class="btn btn-success btn-raised btn-lg reg-button" target="_blank">
-                        <i class="fa fa-user-plus"></i> Реєструйся безкоштовно!
-                    </a>
-                </div>
-            </div>
-        </div>
     </div>
 
     <div class="main main-raised">
         <div class="container">
 
-            <div class="section text-center">
-                <h2 class="title">Кого слухаємо?</h2>
+            <div class="section">
+                <h2 class="title">#{{ page.uuid }}, {{ page.date | date: "%d.%m.%Y" }}, {{ page.category }}</b></h2>
+                <h2>{{ page.title }}</h2>
+                <div>{{ content }}</div>
+            </div>
+
+            <h2>Матеріали виступів</h2>
+
+            {% for talk_id in page.talks %}
+            {% assign talk = site.data.talks[talk_id] %}
+            {% assign speaker = site.data.speakers[talk.speaker] %}
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="team-player">
+                        <img src="{% if speaker.photo %}{{ speaker.photo }}{% else %}{{ '/assets/img/default-avatar.png' | relative_url }}{% endif %}"
+                             alt="speakers photo" class="img-raised img-circle">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h5 class="title">{{ speaker.name }}<br/>
+                        <small class="text-muted">{{ speaker.job_title }}</small>
+                    </h5>
+                    <div class="social-icons">
+                        {% include social-icons.html speaker=speaker %}
+                    </div>
+
+                    <div class="team-player">
+                        <h3 class="title">{{ talk.title }}</h3>
+                        <p class="description">{{ talk.description }}</p>
+                        <p class="description">Мова виступу: {% include lang.html lang=talk.lang %}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="title">
+                        <h2>Slides</h2>
+                    </div>
+
+                    <div class="content">
+                        {{ talk.slides }}
+                    </div>
+                </div>
 
 
-                <div class="team">
-                    <div class="row">
-
-                        {% for talk_id in event.talks %}
-                        {% assign talk = site.data.talks[talk_id] %}
-                        {% assign speaker = site.data.speakers[talk.speaker] %}
-                        <div class="col-md-6">
-                            <div class="team-player">
-                                <img src="{% if speaker.photo %}{{ speaker.photo }}{% else %}{{ '/assets/img/default-avatar.png' | relative_url }}{% endif %}"
-                                     alt="speakers photo" class="img-raised img-circle">
-                                <h5 class="title">{{ speaker.name }}<br/>
-                                    <small class="text-muted">{{ speaker.job_title }}</small>
-                                </h5>
-                                <div class="social-icons">
-                                    {% include social-icons.html speaker=speaker %}
-                                </div>
-                                <h3 class="title">{{ talk.title }}</h3>
-                                <p class="description">{{ talk.description }}</p>
-                                <p class="description">Мова виступу: {% include lang.html lang=talk.lang %}</p>
-                            </div>
-                        </div>
-                        {% endfor %}
-
+                <div class="col-md-6">
+                    <div class="title">
+                        <h2>Video</h2>
+                    </div>
+                    <div class="content">
+                        {{ talk.video }}
                     </div>
                 </div>
 
             </div>
 
-            <div class="section section-landing">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h2 class="title">Місце проведення</h2>
-                        <h5>Місто Харків</h5>
-                        <div class="description">
-                            За декілька днів до івенту ми надішлемо Вам листа із запрошенням та деталями щодо місця
-                            проведення івенту.
-                        </div>
-                    </div>
-                </div>
+            <hr>
 
-            </div>
-
-            <div class="section section-landing">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h2 class="title">Що таке MobiDev Meetup?</h2>
-                        <h5>Для кого?</h5>
-                        <div class="description">
-                            Кожен мітап зосереджений навколо певної теми. Кожна доповідь базується на практичному
-                            досвіді та рішенні проблеми. Якщо Ви маєте досвід та інтерес - запрошуємо до участі.
-                        </div>
-                        <h5>Чому? </h5>
-                        <div class="description">
-                            У своїй повсякденній роботі ми використовуємо новітні технології, працюємо із нестандартними
-                            задачами та знаходимо для них ефективні рішення. Це, звісно, цікаво, однак інколи корисно
-                            відволіктися від буденності розробки. Професійні тематичні мітапи - це найкращий спосіб
-                            поділитися своїм досвідом, обговорити ідеї та відкрити нові можливості в колі професіоналів.
-                        </div>
-                        <h5>Українською?</h5>
-                        <div class="description">
-                            Так, цього разу спробували розширити горизонт та отримати практику використання професійної
-                            термінології українською. Можливо, наступний буде англійською?
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+            {% endfor %}
 
         </div>
 
