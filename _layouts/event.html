@@ -90,7 +90,15 @@
                 <div>{{ content }}</div>
             </div>
 
-            <h2>Матеріали виступів</h2>
+            <div class="section text-center">
+                <h2>Фото</h2>
+
+                {{ page.photos_embed }}
+            </div>
+
+            <div class="section text-center">
+                <h2>Матеріали виступів</h2>
+            </div>
 
             {% for talk_id in page.talks %}
             {% assign talk = site.data.talks[talk_id] %}
