@@ -8,10 +8,12 @@
 
 .team-player {
   margin-bottom: 25px;
-}
-
-.team-player .description {
-  text-align: left;
+  .description {
+    text-align: left;
+  }
+  img {
+    width: 200px;
+  }
 }
 
 .description {

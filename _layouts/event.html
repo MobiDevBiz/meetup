@@ -85,16 +85,20 @@
         <div class="container">
 
             <div class="section">
-                <h2 class="title">#{{ page.uuid }}, {{ page.date | date: "%d.%m.%Y" }}, {{ page.category }}</b></h2>
+                <h2 class="title">#{{ page.uuid }}, 
+                    {% include date.html date=page.date %}
+                    , {{ page.category }}</b></h2>
                 <h2>{{ page.title }}</h2>
                 <div>{{ content }}</div>
             </div>
 
+            {% if page.photos_embed  %}
             <div class="section text-center">
                 <h2>Фото</h2>
 
                 {{ page.photos_embed }}
             </div>
+            {% endif %}
 
             <div class="section text-center">
                 <h2>Матеріали виступів</h2>
@@ -128,6 +132,7 @@
             </div>
             <div class="row">
                 <div class="col-md-6">
+                    {% if talk.slides %}
                     <div class="title">
                         <h2>Slides</h2>
                     </div>
@@ -135,16 +140,19 @@
                     <div class="content">
                         {{ talk.slides }}
                     </div>
+                    {% endif %}
                 </div>
 
 
                 <div class="col-md-6">
+                    {% if talk.slides %}
                     <div class="title">
                         <h2>Video</h2>
                     </div>
                     <div class="content">
                         {{ talk.video }}
                     </div>
+                    {% endif %}
                 </div>
 
             </div>

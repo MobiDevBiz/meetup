@@ -1,5 +1,5 @@
 1:
-  speaker: i.kuzminov
+  speaker: y.kuzminov
   title: 'Ruby Web Dev: The Other Way'
   description: 'Розглянемо "гострі леза" у підході до розробки Ruby on Rails застосунків, та як можна покращити цей процес і результат!'
   lang: ua
@@ -26,3 +26,43 @@
   lang: ru
   slides: <iframe src="//slides.com/liubovderevianko/trailblazer_operations/embed" width="100%" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
   video: <iframe width="100%" height="315" src="https://www.youtube.com/embed/qKM2MylIKcU" frameborder="0" allowfullscreen></iframe>
+5:
+  speaker: y.kuzminov
+  title: Railway орієнтоване програмування у PHP на практиці
+  description: |
+    Як почати писати код без if/else, та почати розуміти логіку свого “спагетті коду”? 
+    Розглянемо експеримент на тему Railway підходу у PHP. 
+    Це не має нічого спільного с Rails чи Ruby, а навпаки спрямовує нас у функціональне програмування. 
+    Давайте позичимо ідеї з Haskell та монади Either, додамо пайплайн накштал в Elixir, і подивимось як це може виглядати в PHP.
+  lang: ua
+  slides: 
+  video: 
+6:
+  speaker: o.sichevskyi
+  title: 'Continuous integration: готовим и подаём к чаю'
+  description: Немного об инструменте для автоматизации сбора и тестирования PHP решений.
+  lang: ru
+  slides: 
+  video: 
+7:
+  speaker: a.legkiy
+  title: 'Авто тесты на крупном PHP проекте: спасательный круг и подводные камни'
+  description: |
+    Начинаем писать код по TDD прямо сейчас.
+    Рекомендации по внедрению автотестов в проект.
+    Разбор и решение возникающих проблем.
+    Запускаем тесты в несколько независимых потоков
+  lang: ru
+  slides: 
+  video: 
+8:
+  speaker: o.vasilchenko
+  title: PHP и время. Храним и используем данные привязанные ко времени
+  description: |
+    UTC и таймзоны и DateTime Class. Типичные поля в БД.
+    Задачи со временем в  “социальной сети”.
+    Храним день рождения юзера и почему не стоит всегда использовать таймстампы.
+    Задачи со временем в “бухгалтерской системе”
+  lang: ru
+  slides: 
+  video: 

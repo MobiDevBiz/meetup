@@ -1,0 +1,7 @@
+{% capture unknownDate %}{{ '01.01.1971' | date: '%s' }}{% endcapture %}
+{% capture currentDate %}{{ include.date | date: '%s' }}{% endcapture %}
+{% if currentDate == unknownDate %}
+Незабаром
+{% else %}
+{{ include.date | date: "%d.%m.%Y" }}
+{% endif %}

@@ -1,4 +1,4 @@
-i.kuzminov:
+y.kuzminov:
   name: Євген Кузьмінов
   job_title: Ruby Team Leader у MobiDev
   about: Web Development Team Leader at MobiDev. 10 years in the IT. In a free time I am writing an own technical blog (http://stdout.in), contribute to Open Source, keep an eye on best practices of OOP, Domain-Driven Design, and functional programming languages (especially Elixir/Erlang).
@@ -30,3 +30,33 @@ v.volontsevich:
   about: Ruby developer for 1 year.
   photo: https://s.gravatar.com/avatar/f677ade4a48de6452fe7fbfa25c1e752?s=170     
   linkedin: https://ua.linkedin.com/in/viktor-volontsevich-3337389a
+
+o.sichevskyi:
+  name: Олег Січевський
+  job_title: Web Technical Lead у MobiDev
+  about: 
+  photo: http://en.gravatar.com/userimage/118204258/1d71f1cdf0b55461bace48257f8f8dc9.png?size=200
+  site:
+  linkedin: https://www.linkedin.com/in/oleg-sichevskyi/
+  twitter:
+  facebook:
+
+a.legkiy: 
+  name: Анатолій Легкий
+  job_title: Веб розробник у MobiDev
+  about: 
+  photo: https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAhRAAAAJGQ0NGM1YjBkLWU4MjMtNDYzNy1hZDk5LWNjNjczNGM1NTRmOQ.jpg
+  site:
+  linkedin: https://www.linkedin.com/in/анатолий-легкий-5b886172/
+  twitter:
+  facebook:
+
+o.vasilchenko: 
+  name: Олексій Васильченко
+  job_title: Web Group Leader and Project Manager у MobiDev
+  about: 
+  photo: https://scontent-frt3-1.xx.fbcdn.net/v/t1.0-9/14364877_1161003540610063_2398851192557603282_n.jpg?oh=87b54ebd688c1bae797a5ce05e5b6a54&oe=594DC3F8
+  site:
+  linkedin: https://www.linkedin.com/in/alex-vasilchenko-ba387630
+  twitter:
+  facebook:

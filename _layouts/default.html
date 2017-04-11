@@ -76,7 +76,7 @@
     </div>
 </nav>
 
-{% assign event = site.events | where:"uuid", 1 | first %}
+{% assign event = site.events | where:"uuid", 2 | first %}
 
 <div class="wrapper">
     <div class="header header-filter" style="background-image: url({{ '/assets/img/promo.jpg' | relative_url }});">
@@ -85,15 +85,17 @@
                 <div class="col-md-6">
                     <h1 class="title">{{ site.title }}</h1>
                     <h1 class="scope-tag"><i class="fa fa-tag"></i> {{ event.category }}</h1>
-                    <h1 class="title"><i class="fa fa-calendar-check-o"></i> {{ event.date | date: "%d.%m.%Y" }}, Харків</h1>
+                    <h1 class="title"><i class="fa fa-calendar-check-o"></i> {% include date.html date=event.date %}, Харків</h1>
+                    {% if event.time %}
                     <h1 class="title"><i class="fa fa-clock-o"></i> {{ event.time }}</h1>
+                    {% endif %}
 
-                    <!--<a href="{{ event.reg_link }}" class="btn btn-success btn-raised btn-lg reg-button" target="_blank">-->
-                        <!--<i class="fa fa-user-plus"></i> Реєструйся безкоштовно!-->
-                    <!--</a>-->
-                    <a href="{{ event.url }}" class="btn btn-danger btn-raised btn-lg reg-button">
+                    <!--<a href="{{ event.reg_link }}" class="btn btn-success btn-raised btn-lg reg-button" target="_blank">
+                        <i class="fa fa-user-plus"></i> Реєструйся безкоштовно!
+                    </a>-->
+                    <!--<a href="{{ event.url }}" class="btn btn-danger btn-raised btn-lg reg-button">
                         <i class="fa fa-file-video-o"></i> Дивись відео, фото та слайди!
-                    </a>
+                    </a>-->
                 </div>
             </div>
         </div>
