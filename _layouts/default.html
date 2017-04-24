@@ -76,7 +76,7 @@
     </div>
 </nav>
 
-{% assign event = site.events | where:"uuid", 2 | first %}
+{% assign event = site.events | where:"uuid", site.home_page_event_id | first %}
 
 <div class="wrapper">
     <div class="header header-filter" style="background-image: url({{ '/assets/img/promo.jpg' | relative_url }});">

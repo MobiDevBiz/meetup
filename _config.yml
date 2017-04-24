@@ -4,6 +4,7 @@ description: | # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://meetup.mobidev.com.ua"
 mobidev_ua_url: "http://mobidev.com.ua"
+home_page_event_id: 2
 
 # Build settings
 markdown: kramdown
@@ -13,6 +14,8 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+
+future: true
 
 collections:
   events:
