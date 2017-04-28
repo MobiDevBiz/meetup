@@ -1,0 +1,7 @@
+<meta content="MobiDev Meetup | {% include date.html date=page.date %} | {{ page.title | escape }}" property="og:title">
+<meta content="{{ page.url | absolute_url }}" property="og:url">
+<meta content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}" property="og:description">
+<meta content="MobiDev Meetup | {% include date.html date=page.date %} | {{ page.title | escape }}" property="og:site_name">
+<meta content="website" property="og:type">
+<meta content="en_US" property="og:locale">
+<meta content="{{ page.og_image }}" property="og:image">
