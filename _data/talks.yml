@@ -36,7 +36,7 @@
     Давайте позичимо ідеї з Haskell та монади Either, додамо пайплайн накштал в Elixir, і подивимось як це може виглядати в PHP.
   lang: ua
   slides: <script async class="speakerdeck-embed" data-id="e395fc5f089f401cad2a114a79399624" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-  video: 
+  video: <iframe width="100%" height="315" src="https://www.youtube.com/embed/XWG_v3mTrL0" frameborder="0" allowfullscreen></iframe>
 6:
   speaker: o.sichevskyi
   title: 'Continuous integration: готовим и подаём к чаю'
@@ -48,7 +48,7 @@
     Пишем Ansible роли для сбора и тестирования.
   lang: ru
   slides: <script async class="speakerdeck-embed" data-id="85a6f2ffa6fa45b4a7496b1de05e45c9" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-  video: 
+  video: <iframe width="100%" height="315" src="https://www.youtube.com/embed/tgtuKt4n9l8" frameborder="0" allowfullscreen></iframe>
 7:
   speaker: a.legkiy
   title: 'Авто тесты на крупном PHP проекте: спасательный круг и подводные камни'
@@ -59,7 +59,7 @@
     Запускаем тесты в несколько независимых потоков
   lang: ru
   slides: <script async class="speakerdeck-embed" data-id="34a24781aba148d08c1e05984e3b36dc" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-  video: 
+  video: <iframe width="100%" height="315" src="https://www.youtube.com/embed/0_1ZzLVYOPU" frameborder="0" allowfullscreen></iframe>
 8:
   speaker: o.vasilchenko
   title: PHP и время. Храним и используем данные привязанные ко времени
@@ -70,4 +70,4 @@
     Задачи со временем в “бухгалтерской системе”
   lang: ru
   slides: <script async class="speakerdeck-embed" data-id="f2bdd4a97f4a4f6ea333a3637ed61eac" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-  video: 
+  video: <iframe width="100%" height="315" src="https://www.youtube.com/embed/nnlHw6rhP0A" frameborder="0" allowfullscreen></iframe>
