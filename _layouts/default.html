@@ -59,12 +59,6 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://vk.com/mobidev_corp" target="_blank"
-                       class="btn btn-simple btn-white btn-just-icon">
-                        <i class="fa fa-vk"></i>
-                    </a>
-                </li>
-                <li>
                     <a href="https://www.facebook.com/MobiDev.Team" target="_blank"
                        class="btn btn-simple btn-white btn-just-icon">
                         <i class="fa fa-facebook-square"></i>
@@ -89,12 +83,12 @@
                     <h1 class="title"><i class="fa fa-clock-o"></i> {{ event.time }}</h1>
                     {% endif %}
 
-                    <!--<a href="{{ event.reg_link }}" class="btn btn-success btn-raised btn-lg reg-button" target="_blank">
+                    <a href="{{ event.reg_link }}" class="btn btn-success btn-raised btn-lg reg-button" target="_blank">
                         <i class="fa fa-user-plus"></i> Реєструйся безкоштовно!
-                    </a>-->
-                    <a href="{{ event.url }}" class="btn btn-danger btn-raised btn-lg reg-button">
-                        <i class="fa fa-file-video-o"></i> Дивись відео, фото та слайди!
                     </a>
+                    <!-- <a href="{{ event.url }}" class="btn btn-danger btn-raised btn-lg reg-button">
+                        <i class="fa fa-file-video-o"></i> Дивись відео, фото та слайди!
+                    </a> -->
                 </div>
             </div>
         </div>
@@ -124,8 +118,8 @@
                                     {% include social-icons.html speaker=speaker %}
                                 </div>
                                 <h3 class="title">{{ talk.title }}</h3>
-                                <p class="description">{{ talk.description }}</p>
-                                <p class="description">Мова виступу: {% include lang.html lang=talk.lang %}</p>
+                                <div class="description">{{ talk.description | markdownify }}</div>
+                                <div class="description">Мова виступу: {% include lang.html lang=talk.lang %}</div>
                             </div>
                         </div>
                         {% endfor %}
@@ -156,7 +150,7 @@
                         <h5>Для кого?</h5>
                         <div class="description">
                             Кожен мітап зосереджений навколо певної теми. Кожна доповідь базується на практичному
-                            досвіді та рішенні проблеми. Якщо Ви маєте досвід та інтерес - запрошуємо до участі.
+                            досвіді та рішенні проблеми. Якщо Ви маєте досвід та інтерес - запрошуємо до участі (пишіть у <a href="https://gitter.im/MobiDevMeetup/Lobby">Gitter чат</a>).
                         </div>
                         <h5>Чому? </h5>
                         <div class="description">
@@ -165,10 +159,9 @@
                             відволіктися від буденності розробки. Професійні тематичні мітапи - це найкращий спосіб
                             поділитися своїм досвідом, обговорити ідеї та відкрити нові можливості в колі професіоналів.
                         </div>
-                        <h5>Українською?</h5>
+                        <h5>Українською, англійською?</h5>
                         <div class="description">
-                            Так, цього разу спробували розширити горизонт та отримати практику використання професійної
-                            термінології українською. Можливо, наступний буде англійською?
+                            А чому б і ні?
                         </div>
                     </div>
                 </div>

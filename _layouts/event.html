@@ -60,12 +60,6 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://vk.com/mobidev_corp" target="_blank"
-                       class="btn btn-simple btn-white btn-just-icon">
-                        <i class="fa fa-vk"></i>
-                    </a>
-                </li>
-                <li>
                     <a href="https://www.facebook.com/MobiDev.Team" target="_blank"
                        class="btn btn-simple btn-white btn-just-icon">
                         <i class="fa fa-facebook-square"></i>
@@ -85,7 +79,7 @@
         <div class="container">
 
             <div class="section">
-                <h2 class="title">#{{ page.uuid }}, 
+                <h2 class="title">#{{ page.uuid }},
                     {% include date.html date=page.date %}
                     , {{ page.category }}</b></h2>
                 <h2>{{ page.title }}</h2>
@@ -125,7 +119,7 @@
 
                     <div class="team-player">
                         <h3 class="title">{{ talk.title }}</h3>
-                        <p class="description">{{ talk.description }}</p>
+                        <p class="description">{{ talk.description | markdownify }}</p>
                         <p class="description">Мова виступу: {% include lang.html lang=talk.lang %}</p>
                     </div>
                 </div>

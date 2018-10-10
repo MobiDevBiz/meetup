@@ -30,9 +30,9 @@
   speaker: y.kuzminov
   title: Railway орієнтоване програмування у PHP на практиці
   description: |
-    Як почати писати код без if/else, та почати розуміти логіку свого “спагетті коду”? 
-    Розглянемо експеримент на тему Railway підходу у PHP. 
-    Це не має нічого спільного с Rails чи Ruby, а навпаки спрямовує нас у функціональне програмування. 
+    Як почати писати код без if/else, та почати розуміти логіку свого “спагетті коду”?
+    Розглянемо експеримент на тему Railway підходу у PHP.
+    Це не має нічого спільного с Rails чи Ruby, а навпаки спрямовує нас у функціональне програмування.
     Давайте позичимо ідеї з Haskell та монади Either, додамо пайплайн накштал в Elixir, і подивимось як це може виглядати в PHP.
   lang: ua
   slides: <script async class="speakerdeck-embed" data-id="e395fc5f089f401cad2a114a79399624" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
@@ -71,3 +71,27 @@
   lang: ru
   slides: <script async class="speakerdeck-embed" data-id="f2bdd4a97f4a4f6ea333a3637ed61eac" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
   video: <iframe width="100%" height="315" src="https://www.youtube.com/embed/nnlHw6rhP0A" frameborder="0" allowfullscreen></iframe>
+9:
+  speaker: y.kuzminov
+  title: Hanami framework - нова надія Ruby чи "імперія ходить по тим самим граблям"?
+  description: |
+    * Огляд ключових відмінностей у архітектурі веб застосунку і які проблеми вони вирішують
+    * А також які нові проблеми вони привносять
+    * Основні рецепти додавання функціоналу до якого ми звикли у Рейлс (Background job, CLI, cache, enum та інше)
+    * Hanami застосунок моєї мрії - бачення "ідельної" структури
+    * Використання складових частин Hanami для побудови повністю кастомного застосунку
+  lang: ua
+  slides:
+  video:
+10:
+  speaker: s.koba
+  title: Локальная разработка Ruby проекта для Kubernetes
+  description: |
+    Доклад посвящен построению Cloud систем на Ruby с использвоанием технологии Kubernetes.
+
+    Речь пойдет об основных понятиях и структурных элементах Kubernetes, когда стоит применять эту технологию и как она применима к Ruby приложениям.
+
+    В рамках доклада также будет продемонстрирован пример локальной разработки и использованием Kubernetes и Minikube.
+  lang: ru
+  slides:
+  video:
