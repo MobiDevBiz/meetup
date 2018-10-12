@@ -1,6 +1,6 @@
 title: MobiDev Meetup
 description: | # this means to ignore newlines until "baseurl:"
-  Мабуть, перший багатомовний ІТ мітап у східній Україні!
+  Мабуть, перший багатомовний ІТ-мітап у східній Україні!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://meetup.mobidev.com.ua"
 mobidev_ua_url: "http://mobidev.com.ua"
